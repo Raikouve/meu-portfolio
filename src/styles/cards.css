@@ -1,0 +1,31 @@
+#root {
+  --main-background-color: rgb(9, 12, 2);
+  --main-emphasis-color: rgb(175, 161, 70);
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 5px;
+  height: 100%;
+  width: 25%;
+}
+
+.image-container {
+  height: 40%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.content-container {
+  padding: 2em 1em;
+}
+
+.content-container h3 {
+  color: var(--main-emphasis-color);
+  margin-bottom: 1em;
+}
