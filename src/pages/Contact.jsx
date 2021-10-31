@@ -20,6 +20,10 @@ function Contact() {
     setTextArea(value);
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+
   return (
     <section className="contact-section">
       <div>
@@ -29,6 +33,7 @@ function Contact() {
           <textarea name="Mensagem" cols="30" rows="10" value={textArea} onChange={handleTextAreaChange} />
           <button
             type="submit"
+            onSubmit={handleSubmit}
             disabled={
               !(!handleNameValidation(text)
               && handleEmailValidation(emailText)
