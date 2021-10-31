@@ -27,13 +27,12 @@ function Contact() {
   return (
     <section className="contact-section">
       <div>
-        <form action="https://formsubmit.co/6714a332d4027e1d85fe840f879dd9b0" method="POST">
+        <form action="https://formsubmit.co/6714a332d4027e1d85fe840f879dd9b0" method="POST" onSubmit={handleSubmit}>
           <Input name="Nome" type="text" text={text} handleChange={handleNameChange} />
           <Input name="E-mail" type="email" text={emailText} handleChange={handleEmailChange} />
           <textarea name="Mensagem" cols="30" rows="10" value={textArea} onChange={handleTextAreaChange} />
           <button
             type="submit"
-            onSubmit={handleSubmit}
             disabled={
               !(!handleNameValidation(text)
               && handleEmailValidation(emailText)
