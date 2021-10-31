@@ -1,0 +1,53 @@
+.about-me-section-pages {
+  background-color: var(--main-background-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1em;
+  width: 100vw;
+}
+
+.about-me-container {
+  align-items: center;
+  display: flex;
+  height: 90vh;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.about-me-description {
+  color: white;
+  padding: 2em 0 0 2em;
+  width: 45%;
+}
+
+.about-me-img-container {
+  align-items: center;
+  /* border: 5px solid rgb(175, 161, 70); */
+  border-radius: 50%;
+  display: flex;
+  height: 50%;
+  margin-right: 10em;
+  justify-content: center;
+  width: 20%;
+  z-index: 5;
+}
+
+.about-me-img-container img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.about-me-title-container {
+  color: var(--main-emphasis-color);
+  padding: 2em 0 0 2em;
+  height: 30%;
+  overflow-y: hidden;
+  width: 300px;
+}
+
+.about-me-title-container h2 {
+  font-size: 2.8em;
+  overflow-y: hidden;
+}

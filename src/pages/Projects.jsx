@@ -8,16 +8,19 @@ function Projects() {
 
   return (
     <section className="section-page-projects">
-      <div className="projects-title-container">
+      <div className="title-container">
         <h2>Projetos</h2>
       </div>
       <div className="project-cards-container">
-        {cardsData.map((card) => (
+        {cardsData.map(({
+          id, image, name, description, techs,
+        }) => (
           <ProjectCard
-            key={card.id}
-            cardImage={card.image}
-            projectName={card.name}
-            projectDescription={card.description}
+            key={id}
+            cardImage={image}
+            projectName={name}
+            projectDescription={description}
+            techs={techs}
           />
         ))}
       </div>

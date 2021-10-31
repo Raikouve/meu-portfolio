@@ -4,14 +4,22 @@
 }
 
 .project-card {
-  background-color: white;
+  background-image: linear-gradient(rgb(254, 254, 254), rgb(221, 221, 221));
+  box-shadow: (-8px 12px 6px rgba(3, 3, 3, 0.95));
   border-radius: 5px;
-  height: 100%;
-  width: 25%;
+  height: 95%;
+  transition: 300ms ease;
+  overflow-y: hidden;
+  width: 26%;
+}
+
+.project-card:hover {
+  box-shadow: rgba(255, 255, 247, 0.2) 0px 4px 8px;
+  cursor: pointer;
 }
 
 .image-container {
-  height: 40%;
+  height: 45%;
   overflow: hidden;
   width: 100%;
 }
@@ -23,9 +31,24 @@
 
 .content-container {
   padding: 2em 1em;
+  margin-bottom: 1em;
 }
 
 .content-container h3 {
   color: var(--main-emphasis-color);
   margin-bottom: 1em;
+}
+
+.card-techs {
+  align-items: center;
+  display: flex;
+  height: 15%;
+  justify-content: center;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.card-techs img {
+  height: 75%;
+  width: 75%;
 }

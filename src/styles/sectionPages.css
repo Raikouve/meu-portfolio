@@ -34,6 +34,7 @@
 
 .logo {
   animation: text 0.3s linear;
+  overflow-y: hidden;
 }
 
 .presentation-container h2 {
@@ -46,6 +47,7 @@
 
 .skills-description {
   animation: text 0.6s linear;
+  overflow-y: hidden;
 }
 
 .presentation-container .skills-description h2 {
@@ -54,26 +56,89 @@
 }
 
 .presentation-img-container {
-  animation: image 0.5s ease-out;
   align-items: center;
+  animation: image 0.4s ease-out;
+  background-color: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: center;
   height: 100%;
-  width: 80%;
+  width: 65%;
 }
 
 .presentation-img-container-loop {
-  animation: imageLoop 2s linear infinite;
   align-items: center;
+  animation: imageLoop 2s linear infinite;
+  background-color: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: center;
   height: 100%;
-  width: 80%;
+  width: 65%;
 }
 
 .presentation-img-container-loop .website-hosting-png {
+  filter: drop-shadow(-8px 12px 6px rgba(3, 3, 3, 0.95));
   height: 100%;
   width: 100%;
+}
+
+.presentation-img-container .website-hosting-png {
+  filter: drop-shadow(-8px 12px 6px rgba(3, 3, 3, 0.95));
+  height: 100%;
+  width: 100%;
+}
+
+.section-page-projects {
+  background-color: var(--main-background-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1em;
+  width: 100vw;
+}
+
+.title-container {
+  color: var(--main-emphasis-color);
+  /* display: inline-block; */
+  padding: 2em 0 0 2em;
+  height: 30%;
+  overflow-y: hidden;
+  width: 300px;
+}
+
+.title-container h2 {
+  font-size: 2.8em;
+  overflow-y: hidden;
+}
+
+.project-cards-container {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  height: 52em;
+  justify-self: center;
+  width: 95%;
+}
+
+
+.more-projects {
+  align-items: center;
+  color: white;
+  display: flex;
+  padding: 2em 0 0 2em;
+  height: 30%;
+  overflow-y: hidden;
+  width: 300px;
+}
+
+.more-projects h2 {
+  font-size: 2.8em;
+  transition: 400ms ease;
+}
+
+.more-projects h2:hover {
+  color: var(--main-emphasis-color);
+  cursor: pointer;
 }
 
 @keyframes text {
@@ -126,60 +191,4 @@
   80% { transform: translate(-2, -1px); }
 
   100% {  transform: translate(0, 0); }
-}
-
-.presentation-img-container .website-hosting-png {
-  height: 100%;
-  width: 100%;
-}
-
-.section-page-projects {
-  background-color: var(--main-background-color);
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  padding: 1em;
-  width: 100vw;
-}
-
-.projects-title-container {
-  color: var(--main-emphasis-color);
-  display: inline-block;
-  padding: 2em 0 0 2em;
-  height: 30%;
-  width: 300px;
-}
-
-.projects-title-container h2 {
-  font-size: 2.8em;
-  overflow-y: hidden;
-}
-
-.project-cards-container {
-  align-self: center;
-  display: flex;
-  justify-content: space-between;
-  height: 50%;
-  justify-self: center;
-  width: 95%;
-}
-
-
-.more-projects {
-  align-items: center;
-  color: white;
-  display: flex;
-  padding: 2em 0 0 2em;
-  height: 30%;
-  width: 300px;
-}
-
-.more-projects h2 {
-  font-size: 2.8em;
-  transition: 400ms ease;
-}
-
-.more-projects h2:hover {
-  color: var(--main-emphasis-color);
-  cursor: pointer;
 }
