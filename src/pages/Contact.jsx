@@ -17,10 +17,10 @@ function Contact() {
 
   return (
     <section>
-      <form action="https://formsubmit.co/dev.tonigoncalves@outlook.com" method="POST">
+      <form action="https://formsubmit.co/6714a332d4027e1d85fe840f879dd9b0" method="POST">
         <Input name="Nome" type="text" text={text} handleChange={handleNameChange} />
         <Input name="E-mail" type="email" text={emailText} handleChange={handleEmailChange} />
-        <textarea cols="30" rows="10" required />
+        <textarea name="Mensagem" cols="30" rows="10" required />
         <button type="submit" disabled={!handleEmailValidation(emailText)}>Enviar</button>
       </form>
     </section>
