@@ -15,6 +15,8 @@
 
 .section-pages {
   background-color: var(--main-background-color);
+  background-image: url('../images/fancy-pants-tr.png');
+  background-position: center bottom;
   display: flex;
   justify-content: space-between;
   height: 100vh;
@@ -89,6 +91,8 @@
 
 .section-page-projects {
   background-color: var(--main-background-color);
+  background-image: url('../images/fancy-pants-tr.png');
+  background-position: center top;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -98,7 +102,6 @@
 
 .title-container {
   color: var(--main-emphasis-color);
-  /* display: inline-block; */
   padding: 2em 0 0 2em;
   height: 30%;
   overflow-y: hidden;

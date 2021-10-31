@@ -3,7 +3,7 @@ const cardsData = [
     id: 1,
     name: 'Movie Library CRUD',
     image: 'https://i.imgur.com/GLIGj98.png',
-    description: 'Um CRUD de cartões de filmes em React.',
+    description: 'Um CRUD de cartões de filmes.',
     techs: [
       {
         id: 1,
@@ -15,7 +15,7 @@ const cardsData = [
     id: 2,
     name: 'Trybewallet',
     image: 'https://i.imgur.com/GLIGj98.png',
-    description: 'Um gerenciador de gastos pessoais feito com React/Redux.',
+    description: 'Gerenciador de gastos pessoais.',
     techs: [
       {
         id: 1,
@@ -31,7 +31,7 @@ const cardsData = [
     id: 3,
     name: 'Trivia',
     image: 'https://i.imgur.com/GLIGj98.png',
-    description: 'Jogo estilo Trivia feito com React/Redux.',
+    description: 'Jogo de perguntas e respostas.',
     techs: [
       {
         id: 1,
