@@ -21,23 +21,27 @@ function Contact() {
   }
 
   return (
-    <section>
-      <form action="https://formsubmit.co/6714a332d4027e1d85fe840f879dd9b0" method="POST">
-        <Input name="Nome" type="text" text={text} handleChange={handleNameChange} />
-        <Input name="E-mail" type="email" text={emailText} handleChange={handleEmailChange} />
-        <textarea name="Mensagem" cols="30" rows="10" value={textArea} onChange={handleTextAreaChange} />
-        <button
-          type="submit"
-          disabled={
-            !(!handleNameValidation(text)
-            && handleEmailValidation(emailText)
-            && !handleMessageValidation(textArea))
-}
-        >
-          Enviar
-
-        </button>
-      </form>
+    <section className="contact-section">
+      <div>
+        <form action="https://formsubmit.co/6714a332d4027e1d85fe840f879dd9b0" method="POST">
+          <Input name="Nome" type="text" text={text} handleChange={handleNameChange} />
+          <Input name="E-mail" type="email" text={emailText} handleChange={handleEmailChange} />
+          <textarea name="Mensagem" cols="30" rows="10" value={textArea} onChange={handleTextAreaChange} />
+          <button
+            type="submit"
+            disabled={
+              !(!handleNameValidation(text)
+              && handleEmailValidation(emailText)
+              && !handleMessageValidation(textArea))
+        }
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
+      {/* <div>
+        <img src={} alt="procurando-dev" />
+      </div> */}
     </section>
   );
 }

@@ -5,7 +5,8 @@
 
 .project-card {
   background-image: linear-gradient(rgb(254, 254, 254), rgb(221, 221, 221));
-  box-shadow: (-8px 12px 6px rgba(3, 3, 3, 0.95));
+  /* box-shadow: (-8px 12px 6px rgba(3, 3, 3, 0.95)); */
+  box-shadow: rgba(0, 0, 0, 0.85) 0px 5px 25px;
   border-radius: 5px;
   height: 95%;
   transition: 300ms ease;

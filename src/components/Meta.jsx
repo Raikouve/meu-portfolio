@@ -6,6 +6,7 @@ function Meta() {
     <Helmet>
       <meta charSet="utf-8" />
       <title>Antônio Gonçalves</title>
+      <meta name="description" content="Antônio Gonçalves desenvolvedor web" />
     </Helmet>
   );
 }
