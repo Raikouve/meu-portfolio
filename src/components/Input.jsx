@@ -6,7 +6,7 @@ function Input({
 }) {
   return (
     <label htmlFor={name}>
-      {`${name}: `}
+      {name}
       <input name={name} type={type} value={text} required onChange={handleChange} />
     </label>
   );
