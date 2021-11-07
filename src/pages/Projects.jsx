@@ -13,7 +13,7 @@ function Projects() {
       </div>
       <div className="project-cards-container">
         {cardsData.map(({
-          id, image, name, description, techs,
+          id, image, name, description, techs, path,
         }) => (
           <ProjectCard
             key={id}
@@ -21,6 +21,7 @@ function Projects() {
             projectName={name}
             projectDescription={description}
             techs={techs}
+            path={path}
           />
         ))}
       </div>

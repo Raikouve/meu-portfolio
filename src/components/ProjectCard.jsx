@@ -3,7 +3,7 @@ import PropTypes, { arrayOf } from 'prop-types';
 import '../styles/cards.css';
 
 function ProjectCard({
-  cardImage, projectName, projectDescription, techs,
+  cardImage, projectName, projectDescription, techs, path,
 }) {
   return (
     <div className="project-card">
@@ -17,6 +17,9 @@ function ProjectCard({
       <div className="card-techs">
         {techs.map((tech) => <img key={tech.id} src={tech.img} alt="tech" />)}
       </div>
+      <div className="link-container">
+        <a href={path} name={projectName} rel="noreferrer" target="_blank">Ver projeto</a>
+      </div>
     </div>
   );
 }
@@ -26,6 +29,7 @@ ProjectCard.propTypes = {
   projectDescription: PropTypes.string.isRequired,
   projectName: PropTypes.string.isRequired,
   techs: arrayOf(PropTypes.shape({})).isRequired,
+  path: PropTypes.string.isRequired,
 };
 
 export default ProjectCard;
