@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d2695a7a.chunk.css",
+    "main.css": "/portfolio/static/css/main.e23fabb1.chunk.css",
     "main.js": "/portfolio/static/js/main.33bc882b.chunk.js",
     "main.js.map": "/portfolio/static/js/main.33bc882b.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.5ea5b019.js",
@@ -8,7 +8,7 @@
     "static/js/2.3c966d28.chunk.js": "/portfolio/static/js/2.3c966d28.chunk.js",
     "static/js/2.3c966d28.chunk.js.map": "/portfolio/static/js/2.3c966d28.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.d2695a7a.chunk.css.map": "/portfolio/static/css/main.d2695a7a.chunk.css.map",
+    "static/css/main.e23fabb1.chunk.css.map": "/portfolio/static/css/main.e23fabb1.chunk.css.map",
     "static/js/2.3c966d28.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3c966d28.chunk.js.LICENSE.txt",
     "static/media/contact.css": "/portfolio/static/media/fancy-pants-tr.3842b3ae.png",
     "static/media/hiringPeople.24e1da3d.png": "/portfolio/static/media/hiringPeople.24e1da3d.png",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.5ea5b019.js",
     "static/js/2.3c966d28.chunk.js",
-    "static/css/main.d2695a7a.chunk.css",
+    "static/css/main.e23fabb1.chunk.css",
     "static/js/main.33bc882b.chunk.js"
   ]
 }
