@@ -27,13 +27,12 @@ a:hover {
 
 .project-card {
   background-image: linear-gradient(rgb(254, 254, 254), rgb(221, 221, 221));
-  /* box-shadow: (-8px 12px 6px rgba(3, 3, 3, 0.95)); */
   box-shadow: rgba(0, 0, 0, 0.85) 0px 5px 25px;
   border-radius: 5px;
-  height: 95%;
+  height: 90%;
   transition: 300ms ease;
   overflow-y: hidden;
-  width: 26%;
+  width: 31%;
 }
 
 .project-card:hover {
@@ -63,7 +62,6 @@ a:hover {
 }
 
 .card-techs {
-  /* align-items: center; */
   display: flex;
   height: 15%;
   justify-content: center;
@@ -73,6 +71,102 @@ a:hover {
 }
 
 .card-techs img {
-  height: 75%;
-  width: 75%;
+  height: 50%;
+  width: 50%;
+}
+
+@media only screen and (max-width: 992px) {
+  .project-card {
+    height: 80%;
+    transition: 300ms ease;
+    overflow-y: hidden;
+    margin-bottom: 1em;
+    width: 30%;
+  }
+
+  .image-container {
+    height: 35%;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .content-container {
+    padding: 1em 1em;
+    margin-bottom: 0.5em;
+  }
+
+  .card-techs {
+    display: flex;
+    height: 15%;
+    justify-content: center;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-card {
+    height: 65%;
+    transition: 300ms ease;
+    overflow-y: hidden;
+    margin-bottom: 0.5em;
+    width: 30%;
+  }
+
+  .image-container {
+    height: 36%;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .content-container h3 {
+    color: var(--main-emphasis-color);
+    margin-bottom: 0.4em;
+  }
+
+  .content-container {
+    padding: 0 0.4em;
+  }
+
+  .card-techs {
+    display: flex;
+    height: 12%;
+    justify-content: center;
+    padding: 0 0.1em;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project-card {
+    height: 65%;
+    transition: 300ms ease;
+    overflow-y: hidden;
+    margin-bottom: 1em;
+    width: 70%;
+  }
+
+  .image-container {
+    height: 40%;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .content-container h3 {
+    color: var(--main-emphasis-color);
+    margin-bottom: 0.4em;
+  }
+
+  .content-container {
+    padding: 0 0.4em;
+  }
+
+  .card-techs {
+    display: flex;
+    height: 12%;
+    justify-content: center;
+    padding: 0 0.1em;
+    width: 100%;
+  }
 }

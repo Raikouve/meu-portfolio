@@ -1,0 +1,8 @@
+.more-projects-section {
+  align-items: center;
+  background-image: url('../images/fancy-pants-tr.png');
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}

@@ -1,5 +1,5 @@
 footer {
-  align-items: center;
+  align-items: flex-start;
   background-color: var(--main-background-color);
   background-image: url('../images/fancy-pants-tr.png');
   background-position: center top;
@@ -9,6 +9,7 @@ footer {
   height: 25vh;
   justify-content: space-between;
   padding: 1em 2em;
+  overflow-y: hidden;
 }
 
 footer h4 {
@@ -33,6 +34,7 @@ footer a:hover {
 
 .footer-button-container {
   align-items: center;
+  align-self: center;
   border: 1px solid var(--main-emphasis-color);
   border-radius: 50%;
   color: white;
@@ -49,4 +51,47 @@ footer a:hover {
 
 .footer-button-container:hover {
   background-color: var(--main-emphasis-color);
+}
+@media only screen and (max-width: 600px) {
+  footer {
+    align-items: flex-start;
+    background-color: var(--main-background-color);
+    background-image: url('../images/fancy-pants-tr.png');
+    background-position: center top;
+    border-top: 2px solid white;
+    border-style: dashed;
+    display: flex;
+    height: 25vh;
+    justify-content: space-between;
+    padding: 0.4em 0.8em;
+    overflow-y: hidden;
+  }
+
+  footer .footer-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    word-wrap: break-word;
+  }
+
+  footer .footer-social-media {
+    width: 40%;
+  }
+
+  .footer-button-container {
+    align-items: center;
+    align-self: center;
+    border: 1px solid var(--main-emphasis-color);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5em;
+    font-weight: 800;
+    height: 40px;
+    justify-content: center;
+    overflow-y: hidden;
+    transition: 300ms ease;
+    width: 40px;
+  }
 }

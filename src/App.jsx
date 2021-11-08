@@ -1,21 +1,22 @@
 import React from 'react';
 import './App.css';
+// import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer';
-// import Meta from './components/Meta';
 import PortfolioContextProvider from './context/PortfolioContextProvider';
 import Contact from './pages/Contact';
-// import AboutMe from './pages/AboutMe';
 import Presentation from './pages/Presentation';
 import Projects from './pages/Projects';
+// import MoreProjects from './pages/MoreProjects';
 
 function App() {
   return (
     <main>
-      {/* <Meta /> */}
       <PortfolioContextProvider>
         <Presentation />
-        {/* <AboutMe /> */}
         <Projects />
+        {/* <Routes>
+          <Route path="/portfolio/moreprojects" component={MoreProjects} />
+        </Routes> */}
         <Contact />
         <Footer />
       </PortfolioContextProvider>

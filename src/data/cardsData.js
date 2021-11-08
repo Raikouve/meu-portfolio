@@ -30,6 +30,10 @@ const cardsData = [
         id: 2,
         img: 'https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/redux/redux-original.svg',
       },
+      {
+        id: 3,
+        img: 'https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/tailwindcss/tailwindcss-plain.svg',
+      },
     ],
     path: 'https://raikouve.github.io/trybewallet',
   },

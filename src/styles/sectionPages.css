@@ -30,8 +30,8 @@
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
-  padding: 2em 2em 4em 2em;
-  width: 35%;
+  padding: 2em 0 4em 2em;
+  width: 40%;
 }
 
 .logo {
@@ -59,22 +59,24 @@
 
 .presentation-img-container {
   align-items: center;
+  align-self: center;
   animation: image 0.4s ease-out;
   background-color: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: center;
-  height: 100%;
-  width: 65%;
+  height: 90%;
+  width: 60%;
 }
 
 .presentation-img-container-loop {
   align-items: center;
+  align-self: center;
   animation: imageLoop 2s linear infinite;
   background-color: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: center;
-  height: 100%;
-  width: 65%;
+  height: 90%;
+  width: 60%;
 }
 
 .presentation-img-container-loop .website-hosting-png {
@@ -95,7 +97,7 @@
   background-position: center top;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 120vh;
   padding: 1em;
   width: 100vw;
 }
@@ -103,9 +105,9 @@
 .title-container {
   color: var(--main-emphasis-color);
   padding: 2em 0 0 2em;
-  height: 30%;
+  height: 25%;
   overflow-y: hidden;
-  width: 300px;
+  width: 30%;
 }
 
 .title-container h2 {
@@ -118,7 +120,7 @@
   align-self: center;
   display: flex;
   justify-content: space-between;
-  height: 72em;
+  height: 90%;
   justify-self: center;
   width: 95%;
 }
@@ -146,12 +148,6 @@
 
 @keyframes text {
   0% { opacity: 0;}
-
-  25% { opacity: 25%; }
-
-  50% { opacity: 50%; }
-
-  75% { opacity: 75%; }
 
   100% { opacity: 100%; }
 }
@@ -194,4 +190,203 @@
   80% { transform: translate(-2, -1px); }
 
   100% {  transform: translate(0, 0); }
+}
+
+@media only screen and (max-width: 992px) {
+
+  .presentation-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 2em 0 4em 2em;
+    width: 50%;
+  }
+
+  .presentation-img-container {
+    align-items: center;
+    align-self: center;
+    animation: image 0.4s ease-out;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    width: 50%;
+  }
+  
+  .presentation-img-container-loop {
+    align-items: center;
+    align-self: center;
+    animation: imageLoop 2s linear infinite;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    width: 50%;
+  }
+
+  .section-page-projects {
+    /* align-items: center; */
+    display: flex;
+    /* flex-direction: column; */
+    height: 140vh;
+    justify-content: center;
+  }
+
+  .project-cards-container {
+    align-items: center;
+    align-self: center;
+    border-radius: 4px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    height: 90%;
+    justify-self: center;
+    overflow-y: hidden;
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .section-pages {
+    background-color: var(--main-background-color);
+    background-image: url('../images/fancy-pants-tr.png');
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 1em;
+    width: 100vw;
+  }
+
+  .presentation-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 2em 2em 4em 2em;
+    text-align: center;
+    width: 100%;
+  }
+
+  .presentation-img-container {
+    display: none;
+  }
+
+  .presentation-img-container-loop {
+    display: none;
+  }
+
+  .section-page-projects {
+    align-items: center;
+    background-color: var(--main-background-color);
+    background-image: url('../images/fancy-pants-tr.png');
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+    padding: 1em;
+    width: 100vw;
+  }
+
+  .project-cards-container {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    height: 90%;
+    justify-self: center;
+    width: 95%;
+  }
+
+  .title-container {
+    color: var(--main-emphasis-color);
+    height: 30%;
+    overflow-y: hidden;
+    width: 300px;
+  }
+  
+  .more-projects {
+    align-items: center;
+    color: white;
+    display: flex;
+    height: 30%;
+    overflow-y: hidden;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .section-pages {
+    background-color: var(--main-background-color);
+    background-image: url('../images/fancy-pants-tr.png');
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+    width: 100vw;
+  }
+
+  .presentation-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    padding: 0.5em;
+    text-align: center;
+    width: 100%;
+  }
+
+  .presentation-img-container {
+    display: none;
+  }
+
+  .presentation-img-container-loop {
+    display: none;
+  }
+
+  .section-page-projects {
+    align-items: center;
+    background-color: var(--main-background-color);
+    background-image: url('../images/fancy-pants-tr.png');
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    padding: 0;
+    width: 100vw;
+  }
+
+  .project-cards-container {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    justify-self: center;
+    width: 95%;
+  }
+
+  .title-container {
+    color: var(--main-emphasis-color);
+    height: 20%;
+    overflow-y: hidden;
+    width: 300px;
+  }
+  
+  .more-projects {
+    align-items: center;
+    color: white;
+    display: flex;
+    height: 30%;
+    overflow-y: hidden;
+    width: 300px;
+  }
 }

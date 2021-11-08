@@ -8,7 +8,7 @@
   background-position: center bottom;
   display: flex;
   justify-content: space-between;
-  height: 100vh;
+  height: 120vh;
   padding: 1em;
   width: 100vw;
 }
@@ -83,4 +83,126 @@
   filter: drop-shadow(-8px 12px 6px rgba(3, 3, 3, 0.95));
   height: 100%;
   width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact-section {
+    align-items: center;
+    background-color: var(--main-background-color);
+    background-image: url('../images/fancy-pants-tr.png');
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    height: 120vh;
+    padding: 1em;
+    width: 100vw;
+  }
+
+  .contact-img-container {
+    height: 80%;
+    width: 40%;
+  }
+
+  .contact-left-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-section {
+    align-items: center;
+    background-color: var(--main-background-color);
+    background-image: url('../images/fancy-pants-tr.png');
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    height: 120vh;
+    padding: 1em;
+    width: 100vw;
+  }
+
+  .contact-left-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-items: center;
+    text-align: center;
+    width: 75%;
+  }
+
+  .contact-title-container {
+    color: var(--main-emphasis-color);
+    padding: 0;
+    height: 30%;
+    overflow-y: hidden;
+    width: 300px;
+  }
+
+  .contact-left-container .form-container {
+    overflow-y: hidden;
+  }
+
+  .contact-left-container .form-container form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-img-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-section {
+    align-items: center;
+    background-color: var(--main-background-color);
+    background-image: url('../images/fancy-pants-tr.png');
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    height: 120vh;
+    padding: 0;
+    width: 100vw;
+  }
+
+  .contact-left-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-items: center;
+    text-align: center;
+    width: 90%;
+  }
+
+  .contact-title-container {
+    color: var(--main-emphasis-color);
+    padding: 0;
+    height: 30%;
+    overflow-y: hidden;
+    width: 300px;
+  }
+
+  .contact-left-container .form-container {
+    overflow-y: hidden;
+  }
+
+  .contact-left-container .form-container form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-left-container .form-container form textarea {
+    width: 100%;
+  }
+
+  .contact-img-container {
+    display: none;
+  }
 }
