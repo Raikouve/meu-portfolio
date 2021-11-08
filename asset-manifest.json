@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.234a4fd9.chunk.css",
-    "main.js": "/portfolio/static/js/main.7578a337.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.7578a337.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.1b78e712.chunk.css",
+    "main.js": "/portfolio/static/js/main.959b1910.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.959b1910.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.5ea5b019.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.5ea5b019.js.map",
     "static/js/2.1e41ff25.chunk.js": "/portfolio/static/js/2.1e41ff25.chunk.js",
     "static/js/2.1e41ff25.chunk.js.map": "/portfolio/static/js/2.1e41ff25.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.234a4fd9.chunk.css.map": "/portfolio/static/css/main.234a4fd9.chunk.css.map",
+    "static/css/main.1b78e712.chunk.css.map": "/portfolio/static/css/main.1b78e712.chunk.css.map",
     "static/js/2.1e41ff25.chunk.js.LICENSE.txt": "/portfolio/static/js/2.1e41ff25.chunk.js.LICENSE.txt",
     "static/media/contact.css": "/portfolio/static/media/fancy-pants-tr.3842b3ae.png",
     "static/media/hiringPeople.24e1da3d.png": "/portfolio/static/media/hiringPeople.24e1da3d.png",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.5ea5b019.js",
     "static/js/2.1e41ff25.chunk.js",
-    "static/css/main.234a4fd9.chunk.css",
-    "static/js/main.7578a337.chunk.js"
+    "static/css/main.1b78e712.chunk.css",
+    "static/js/main.959b1910.chunk.js"
   ]
 }
